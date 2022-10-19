@@ -1,0 +1,29 @@
+<!--  File Name: index.ejs
+      Student Name: Marco Favaretto
+      Student ID: 301186334
+      Date: 09/30/2022 -->
+
+<%- include('partials/header.ejs') %>
+
+<%- include('partials/main_nav.ejs') %>
+
+
+
+  <% if (title == "Home") { %>
+    <%- include('contents/home_content.ejs') %>
+  <% } else if (title == "About Me"){ %>
+    <%- include('contents/about_content.ejs') %>
+  <% } else if (title == "Projects"){ %>
+    <%- include('contents/projects_content.ejs') %>
+  <% } else if (title == "Services"){ %>
+    <%- include('contents/services_content.ejs') %>
+  <% } else if (title == "Contact Me"){ %>
+    <%- include('contents/contact_content.ejs') %>
+  <% } %>
+
+ <%- include('partials/bottom_nav.ejs') %>
+
+ <%- include('partials/footer.ejs') %>
+
+
+

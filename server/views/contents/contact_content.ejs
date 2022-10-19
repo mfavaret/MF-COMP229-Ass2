@@ -1,0 +1,54 @@
+<!-- File Name: contact_content.ejs
+     Student Name: Marco Favaretto
+     Student ID: 301186334
+     Date: 09/30/2022 -->
+
+  <!-- Main Container -->
+<main class="container">
+  <div class="p-5 mb-4">
+    <div class="container-fluid py-3">
+      <h1 class="display-5 fw-bold">Welcome to my <%= title %> page</h1>
+      <div class="row" style="padding-top: 20px;">
+        <div class="col-sm-5" style="padding-bottom: 20px;">
+          <form class="mailForm float-start" action="/home" method="get" style="width: 400px;">
+            <p class="md-8 fs-4">Send me an email:</p>
+            <fieldset style="border: none;">
+              <p>
+                <legend style="padding: 0px 10px;">First Name:</legend>
+                <input style="margin-left: 20px;" name=" txtFirstName" size="40" tabindex="1" type="text" required="required">
+              </p>
+              <p>
+                <legend style="padding: 0px 10px;">Last Name:</legend>
+                <input style="margin-left: 20px;" name="txtLastName" size="40" tabindex="3" type="text" required="required">
+              </p>
+              <p>
+                <legend style="padding: 0px 10px;">Email:</legend>
+                <input style="margin-left: 20px;" name="txtLastName" size="40" tabindex="5" type="text" required="required">
+              </p>
+              <p>
+                <legend style="padding: 0px 10px;">Phone Number:</legend>
+                <input style="margin-left: 20px;" name="txtLastName" size="40" tabindex="7" type="text" required="required">
+              </p>
+              <p>
+                <legend style="padding: 0px 10px;">Message:</legend>
+                <textarea style="resize: none; margin-left: 20px;" tabindex="9" name="txtMessage" rows="6" cols="42"></textarea>
+              </p>
+              <p style="margin-left: 25%">
+                <legend style="padding: 0px 10px;">
+                  <input class="btn btn-primary btn-lg" name="btnSubmit" tabindex="11" type="submit" value="Send Form">
+                </legend>
+              </p>
+            </fieldset>
+          </form>
+        </div>
+        <div class="col-sm-4">
+          <p class="md-8 fs-4">Contact information:</p>
+          <p style="margin-left: 5%;">Name: Marco Favaretto</p>
+          <p style="margin-left: 5%;">Telephone: +1 (647) 123-4567</p>
+          <p style="margin-left: 5%;">Email: mfavaret@my.centennialcollege.ca</p>
+          <p style="margin-left: 5%;">Linkedin: <a href="https://www.linkedin.com/in/favarettomarco/">favarettomarco</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
